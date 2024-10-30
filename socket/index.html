@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <button id="sendButton">Send Message</button>
+    <div id="messages"></div>
+</body>
+<script>
+        const socket = new WebSocket('ws://localhost:8000');
+
+        socket.onopen = function(event) {
+            console.log("Connection established");
+        };
+
+        socket.onmessage = function(event) {
+            console.log("Message from server:", event.data);
+            document.getElementById('messages').innerText += event.data + '\n';
+        };
+
+        socket.onerror = function(event) {
+            console.error("WebSocket error observed:", event);
+        };
+
+        document.getElementById('sendButton').onclick = function() {
+            socket.send("Hello, server!");
+        };
+</script>
+</html>

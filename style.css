@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: Verdana;
+    font-size: 2em;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    text-align: center;
+    box-sizing: border-box;
+    //border: solid red 2px;
+    overflow: hidden;
+}
+
+div#links {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+a {
+    margin: 20px;
+    color: cyan;
+}
+a:hover {
+    color: grey;
+}

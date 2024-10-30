@@ -1,0 +1,43 @@
+#input {
+    display: flex;
+    align-items: center;
+    margin: 10px
+}
+
+#choice{
+    font-size: 2rem;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+}
+
+#submit {
+    margin-left: 5px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+#submit:hover {
+    background-color: grey;
+}
+#submit:active {
+    background-color: white;
+}
+
+#box {
+    display: flex;
+}
+img {
+    margin: auto;
+    width: 30%;
+}
+
+#wait {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 2rem;
+    color: white;
+}
